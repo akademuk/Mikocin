@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #444;
+  background: white;
+  font-size: 16px;
+}
+p {
+  margin: 0;
+}
+article {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  text-align: center;
+}
+h2 {
+  color: #383334;
+  font-size: calc(1.4rem + 1vw);
+  font-weight: 900;
+  text-align: center;
+  &:before {
+    content: "";
+    display: block;
+    background: url(../../img/logo_red.png), url(../../img/logo_grin.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    width: calc(90px + 0.3vw);
+    height: calc(65px + 0.3vh);
+    background-position: left top, right bottom;
+    margin: 0 auto 18px auto;
+  }
+}
+h3 {
+  font-size: calc(1rem + 0.3vw);
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+h6 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  top: -45px;
+  z-index: 1;
+  margin: 0;
+  background: #f3f9ff;
+  padding: 0 46px 0 41px;
+  &::before {
+    content: "!";
+    color: #f4d3bb;
+    font-size: 3.4rem;
+    font-weight: 700;
+    z-index: -1;
+    position: relative;
+    left: 49%;
+    top: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  article {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  article {
+    max-width: 92%;
+    padding: 0;
+  }
+}
