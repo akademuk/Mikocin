@@ -78,3 +78,17 @@ h6 {
     margin-bottom: 3px;
   }
 }
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  .section_statistics_text {
+    line-height: normal !important;
+  }
+  .fourth_section_block_left_text {
+    font-size: 4vw !important;
+  }
+  .fourth_section_block_left_img {
+    span {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+}
