@@ -132,6 +132,12 @@ h6::before {
   }
 }
 
+@media (max-width: 576px) {
+  h3 {
+    margin-bottom: 3px;
+  }
+}
+
 /*-------------First_section_main------start*/
 .first_section {
   display: -webkit-box;
@@ -236,8 +242,8 @@ h6::before {
 
 .section_statistics:before {
   content: "";
-  background: url(../../img/statistics.png), -webkit-gradient(linear, left top, left bottom, color-stop(100%, white), to(white));
-  background: url(../../img/statistics.png), linear-gradient(white 100%, white 100%);
+  background: url(../img/statistics.png), -webkit-gradient(linear, left top, left bottom, color-stop(100%, white), to(white));
+  background: url(../img/statistics.png), linear-gradient(white 100%, white 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,7 +316,7 @@ h6::before {
 
 @media (max-width: 768px) {
   .first_section .first_section_block .first_section_block_top .first_section_block_top_img:before {
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 10px 15px;
   }
   .first_section_block:nth-of-type(1) .first_section_block_top .first_section_block_top_img {
@@ -318,21 +324,21 @@ h6::before {
     padding: 5px;
   }
   .first_section_block:nth-of-type(1) .first_section_block_top .first_section_block_top_img::before {
-    top: 0;
+    top: -6px;
   }
   .first_section_block:nth-of-type(2) .first_section_block_top .first_section_block_top_img {
     background: linear-gradient(155deg, #e47643 0%, #e47643 35%, #fff 26%, #fff 100%);
     padding: 5px;
   }
   .first_section_block:nth-of-type(2) .first_section_block_top .first_section_block_top_img::before {
-    top: 0;
+    top: -6px;
   }
   .first_section_block:nth-of-type(3) .first_section_block_top .first_section_block_top_img {
     background: linear-gradient(155deg, #ec5b19 0%, #ec5b19 35%, #fff 26%, #fff 100%);
     padding: 5px;
   }
   .first_section_block:nth-of-type(3) .first_section_block_top .first_section_block_top_img::before {
-    top: 0;
+    top: -6px;
   }
   .first_section_block_top {
     height: inherit;
@@ -368,8 +374,8 @@ h6::before {
             flex-direction: row-reverse;
   }
   .section_statistics_text {
-    font-size: 3vw;
-    line-height: 1.5rem;
+    font-size: 4vw;
+    line-height: 1rem;
   }
   .section_statistics {
     padding: 20px 10px 10px 10px;
@@ -384,13 +390,16 @@ h6::before {
   .tittle_text {
     font-size: 0.8rem;
   }
+  .first_section_block_top_text {
+    font-size: 3vw;
+  }
 }
 
 /*-------------First_section_main------end*/
 /*-------------Second_section_main------start*/
 .second_section_main {
-  background: url(../../img/banner_img.png), url(../../img/banner_bottom.png), -webkit-gradient(linear, right top, left top, from(#e9f5f7), color-stop(1%, #e9f5f7), color-stop(51%, #f8fdfe), to(#e9f5f7));
-  background: url(../../img/banner_img.png), url(../../img/banner_bottom.png), linear-gradient(to left, #e9f5f7 0%, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7 100%);
+  background: url(../img/banner_img.png), url(../img/banner_bottom.png), -webkit-gradient(linear, right top, left top, from(#e9f5f7), color-stop(1%, #e9f5f7), color-stop(51%, #f8fdfe), to(#e9f5f7));
+  background: url(../img/banner_img.png), url(../img/banner_bottom.png), linear-gradient(to left, #e9f5f7 0%, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7 100%);
   background-repeat: no-repeat;
   background-size: contain, contain, cover;
   background-position: top center, bottom center;
@@ -458,7 +467,7 @@ h6::before {
 
 .second_section .second_section_block:nth-of-type(1)::before {
   content: "";
-  background: url(../../img/why_icon1.png), radial-gradient(#f0f9fa 0%, #f0f9fa 100%);
+  background: url(../img/why_icon1.png), radial-gradient(#f0f9fa 0%, #f0f9fa 100%);
   -webkit-box-shadow: inset 0 -6px 9px -7px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 -6px 9px -7px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
@@ -472,8 +481,8 @@ h6::before {
 }
 
 .second_section .second_section_block:nth-of-type(2)::before {
-  background: url(../../img/why_icon2.png), -webkit-gradient(linear, right top, left top, from(#f7fcfd), to(#f7fcfd));
-  background: url(../../img/why_icon2.png), linear-gradient(to left, #f7fcfd 0%, #f7fcfd 100%);
+  background: url(../img/why_icon2.png), -webkit-gradient(linear, right top, left top, from(#f7fcfd), to(#f7fcfd));
+  background: url(../img/why_icon2.png), linear-gradient(to left, #f7fcfd 0%, #f7fcfd 100%);
   -webkit-box-shadow: inset 0 -6px 9px -7px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 -6px 9px -7px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
@@ -483,8 +492,8 @@ h6::before {
 }
 
 .second_section .second_section_block:nth-of-type(3)::before {
-  background: url(../../img/why_icon3.png), -webkit-gradient(linear, right top, left top, from(#edf7f9), to(#edf7f9));
-  background: url(../../img/why_icon3.png), linear-gradient(to left, #edf7f9 0%, #edf7f9 100%);
+  background: url(../img/why_icon3.png), -webkit-gradient(linear, right top, left top, from(#edf7f9), to(#edf7f9));
+  background: url(../img/why_icon3.png), linear-gradient(to left, #edf7f9 0%, #edf7f9 100%);
   -webkit-box-shadow: inset 0 -6px 9px -7px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 -6px 9px -7px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
@@ -611,6 +620,7 @@ h6::before {
   .second_section_main {
     padding-top: 25px;
     padding-bottom: 20px;
+    margin-top: 25px;
   }
   .second_section_main article h2 {
     margin-bottom: 15px;
@@ -621,6 +631,18 @@ h6::before {
   }
   .second_section .second_section_block:nth-of-type(3):before {
     background-position: center right 0px;
+  }
+  .second_section_block_top_text {
+    font-size: 4vw;
+    line-height: normal;
+    padding-bottom: 20px;
+  }
+  .second_section_block_top_text em {
+    font-size: 3vw;
+  }
+  .second_section_block_bottom_text {
+    font-size: 4vw;
+    line-height: normal;
   }
 }
 
@@ -636,7 +658,7 @@ h6::before {
 }
 
 .third_section_main .article h2:before {
-  background: url(../../img/logo_red.png);
+  background: url(../img/logo_red.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -674,7 +696,7 @@ h6::before {
 
 .third_section .third_section_block:nth-of-type(1)::before {
   content: "";
-  background: url(../../img/ointment.png);
+  background: url(../img/ointment.png);
   display: block;
   width: 105px;
   height: 65px;
@@ -694,7 +716,7 @@ h6::before {
 
 .third_section .third_section_block:nth-of-type(2)::before {
   content: "";
-  background: url(../../img/means.png);
+  background: url(../img/means.png);
   display: block;
   width: 160px;
   height: 105px;
@@ -713,8 +735,8 @@ h6::before {
 
 .third_section .third_section_block:nth-of-type(3)::before {
   content: "";
-  background: url(../../img/package.png), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
-  background: url(../../img/package.png), linear-gradient(#fff 0%, #fff 100%);
+  background: url(../img/package.png), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background: url(../img/package.png), linear-gradient(#fff 0%, #fff 100%);
   display: block;
   width: 80px;
   height: 56px;
@@ -841,13 +863,17 @@ h6::before {
   .third_section_main .article h2 {
     width: 100%;
   }
+  .third_section_block_text {
+    font-size: 4vw;
+    line-height: normal;
+  }
 }
 
 /*-------------Second_section_main------end*/
 /*-------------Second_section_main------start*/
 .fourth_section_main {
-  background: url(../../img/banner_img.png), -webkit-gradient(linear, right top, left top, from(#e9f5f7), color-stop(1%, #e9f5f7), color-stop(51%, #f8fdfe), to(#e9f5f7));
-  background: url(../../img/banner_img.png), linear-gradient(to left, #e9f5f7 0%, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7 100%);
+  background: url(../img/banner_img.png), -webkit-gradient(linear, right top, left top, from(#e9f5f7), color-stop(1%, #e9f5f7), color-stop(51%, #f8fdfe), to(#e9f5f7));
+  background: url(../img/banner_img.png), linear-gradient(to left, #e9f5f7 0%, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7 100%);
   background-repeat: no-repeat;
   background-size: contain, contain, cover;
   background-position: top center, bottom center;
@@ -875,7 +901,7 @@ h6::before {
 }
 
 .fourth_section_block {
-  background: url(../../img/glass.png), url(../../img/voter.png);
+  background: url(../img/glass.png), url(../img/voter.png);
   background-size: contain, 45%;
   background-repeat: no-repeat;
   background-position: right, right 20px top 30px;
@@ -971,6 +997,15 @@ h6::before {
   .fourth_section_block_left {
     position: relative;
     z-index: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .fourth_section_block_left_text {
+    font-size: 5vw;
+  }
+  .fourth_section_main {
+    padding-top: 20px;
   }
 }
 

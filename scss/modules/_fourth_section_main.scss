@@ -1,6 +1,6 @@
 /*-------------Second_section_main------start*/
 .fourth_section_main {
-  background: url(../../img/banner_img.png),
+  background: url(../img/banner_img.png),
     linear-gradient(to left, #e9f5f7 0%, #e9f5f7 1%, #f8fdfe 51%, #e9f5f7 100%);
   background-repeat: no-repeat;
   background-size: contain, contain, cover;
@@ -23,7 +23,7 @@
   justify-content: center;
 }
 .fourth_section_block {
-  background: url(../../img/glass.png), url(../../img/voter.png);
+  background: url(../img/glass.png), url(../img/voter.png);
   background-size: contain, 45%;
   background-repeat: no-repeat;
   background-position: right, right 20px top 30px;
@@ -96,9 +96,12 @@
     z-index: 1;
   }
 }
-@media (max-width: 768px) {
-}
 @media (max-width: 576px) {
+  .fourth_section_block_left_text {
+    font-size: 5vw;
+  }
+  .fourth_section_main {
+    padding-top: 20px;
+  }
 }
-
 /*-------------Second_section_main------end*/

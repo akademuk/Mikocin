@@ -106,7 +106,7 @@
   padding: 48px 80px 42px 83px;
   &:before {
     content: "";
-    background: url(../../img/statistics.png),
+    background: url(../img/statistics.png),
       linear-gradient(rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
     background-size: contain;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@
       .first_section_block_top {
         .first_section_block_top_img {
           &:before {
-            font-size: 2vw;
+            font-size: 3vw;
             padding: 10px 15px;
           }
         }
@@ -199,7 +199,7 @@
           );
           padding: 5px;
           &::before {
-            top: 0;
+            top: -6px;
           }
         }
       }
@@ -216,7 +216,7 @@
           );
           padding: 5px;
           &::before {
-            top: 0;
+            top: -6px;
           }
         }
       }
@@ -233,7 +233,7 @@
           );
           padding: 5px;
           &::before {
-            top: 0;
+            top: -6px;
           }
         }
       }
@@ -261,8 +261,8 @@
     }
   }
   .section_statistics_text {
-    font-size: 3vw;
-    line-height: 1.5rem;
+    font-size: 4vw;
+    line-height: 1rem;
   }
   .section_statistics {
     padding: 20px 10px 10px 10px;
@@ -276,6 +276,9 @@
   }
   .tittle_text {
     font-size: 0.8rem;
+  }
+  .first_section_block_top_text {
+    font-size: 3vw;
   }
 }
 

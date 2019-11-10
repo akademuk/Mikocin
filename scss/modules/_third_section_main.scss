@@ -9,7 +9,7 @@
       font-weight: 900;
       margin-bottom: 20px;
       &:before {
-        background: url(../../img/logo_red.png);
+        background: url(../img/logo_red.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -37,7 +37,7 @@
       border: 4px solid #f64d01;
       &::before {
         content: "";
-        background: url(../../img/ointment.png);
+        background: url(../img/ointment.png);
         display: block;
         width: 105px;
         height: 65px;
@@ -55,7 +55,7 @@
       border: 4px solid #f64d01;
       &::before {
         content: "";
-        background: url(../../img/means.png);
+        background: url(../img/means.png);
         display: block;
         width: 160px;
         height: 105px;
@@ -72,8 +72,7 @@
       border: 4px solid #62bd1f;
       &::before {
         content: "";
-        background: url(../../img/package.png),
-          linear-gradient(#fff 0%, #fff 100%);
+        background: url(../img/package.png), linear-gradient(#fff 0%, #fff 100%);
         display: block;
         width: 80px;
         height: 56px;
@@ -217,6 +216,10 @@
         width: 100%;
       }
     }
+  }
+  .third_section_block_text {
+    font-size: 4vw;
+    line-height: normal;
   }
 }
 
