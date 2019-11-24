@@ -179,6 +179,10 @@ h6::before {
   }
 }
 
+.btn_mobile {
+  display: none;
+}
+
 .header {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5)), color-stop(55%, #f3f5ff), to(#f3f5ff)), url(../img/banner.jpg) left top/contain no-repeat, -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(#f2f2f2));
   background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, #f3f5ff 55%, #f3f5ff 100%), url(../img/banner.jpg) left top/contain no-repeat, linear-gradient(to right, #f2f2f2 0%, #f2f2f2 100%);
@@ -573,7 +577,7 @@ fieldset {
 
 fieldset::before {
   content: "";
-  background: url(../../img/arrow_form.png);
+  background: url(../img/arrow_form.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -633,7 +637,7 @@ fieldset::before {
 .sum_left span:nth-of-type(2)::before {
   content: "";
   display: block;
-  background: url(../../img/Rectangle.png);
+  background: url(../img/Rectangle.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -672,7 +676,7 @@ fieldset::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../../img/name.png);
+  background: url(../img/name.png);
   width: 19px;
   height: 23px;
   position: absolute;
@@ -690,7 +694,7 @@ fieldset::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../../img/number.png);
+  background: url(../img/number.png);
   width: 21px;
   height: 24px;
   position: absolute;
@@ -711,8 +715,8 @@ fieldset::before {
 }
 
 .submit {
-  background: url(../../img/submit.png), -webkit-gradient(linear, left top, right top, from(#ffbc02), to(#ffce02));
-  background: url(../../img/submit.png), linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
+  background: url(../img/submit.png), -webkit-gradient(linear, left top, right top, from(#ffbc02), to(#ffce02));
+  background: url(../img/submit.png), linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -778,7 +782,7 @@ input:nth-of-type(1) {
 
 .guard p::before {
   content: "";
-  background: url(../../img/guard.png);
+  background: url(../img/guard.png);
   width: 19px;
   height: 20px;
   display: -webkit-box;
@@ -1185,11 +1189,38 @@ input:nth-of-type(1) {
 }
 
 @media (max-width: 400px) {
+  .btn_mobile {
+    width: 80px;
+    height: 20px;
+    background: url(../img/submit.png), -webkit-gradient(linear, left top, right top, from(#ffbc02), to(#ffce02));
+    background: url(../img/submit.png), linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
+    background-size: 60%, 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 83%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .btn_mobile:hover fieldset {
+    right: 5%;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
   .header_imeage {
     position: absolute;
     z-index: 1;
     bottom: -20px;
     max-width: 50%;
+    opacity: 0.6;
   }
   .header_imeage .header_imeage_container:nth-of-type(1):before {
     font-size: 0.6rem;
@@ -1211,31 +1242,6 @@ input:nth-of-type(1) {
     display: -ms-flexbox;
     display: flex;
     right: -62%;
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-  }
-  fieldset:after {
-    content: "";
-    width: 80px;
-    height: 20px;
-    background: url(../../img/submit.png), -webkit-gradient(linear, left top, right top, from(#ffbc02), to(#ffce02));
-    background: url(../../img/submit.png), linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
-    background-size: 60%, 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    top: 45%;
-    left: -42%;
-    padding: 5px;
-    border-radius: 10px;
-  }
-  fieldset:hover {
-    right: 5%;
     -webkit-transition: 1s linear;
     transition: 1s linear;
   }

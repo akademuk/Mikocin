@@ -1,3 +1,6 @@
+.btn_mobile {
+  display: none;
+}
 .header {
   background: linear-gradient(
       to right,
@@ -302,7 +305,7 @@ fieldset {
   height: 553px;
   &::before {
     content: "";
-    background: url(../../img/arrow_form.png);
+    background: url(../img/arrow_form.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -351,7 +354,7 @@ fieldset {
       &::before {
         content: "";
         display: block;
-        background: url(../../img/Rectangle.png);
+        background: url(../img/Rectangle.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
@@ -387,7 +390,7 @@ fieldset {
   &::before {
     content: "";
     display: flex;
-    background: url(../../img/name.png);
+    background: url(../img/name.png);
     width: 19px;
     height: 23px;
     position: absolute;
@@ -401,7 +404,7 @@ fieldset {
   &::before {
     content: "";
     display: flex;
-    background: url(../../img/number.png);
+    background: url(../img/number.png);
     width: 21px;
     height: 24px;
     position: absolute;
@@ -420,7 +423,7 @@ fieldset {
   background-image: linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
 }
 .submit {
-  background: url(../../img/submit.png),
+  background: url(../img/submit.png),
     linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
   background-repeat: no-repeat;
   background-size: auto;
@@ -467,7 +470,7 @@ input {
     align-items: center;
     &::before {
       content: "";
-      background: url(../../img/guard.png);
+      background: url(../img/guard.png);
       width: 19px;
       height: 20px;
       display: flex;
@@ -883,11 +886,36 @@ input {
   }
 }
 @media (max-width: 400px) {
+  .btn_mobile {
+    width: 80px;
+    height: 20px;
+    background: url(../img/submit.png),
+      linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
+    background-size: 60%, 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 83%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    &:hover {
+      fieldset {
+        right: 5%;
+        transition: 1s linear;
+      }
+    }
+  }
   .header_imeage {
     position: absolute;
     z-index: 1;
     bottom: -20px;
     max-width: 50%;
+    opacity: 0.6;
     .header_imeage_container {
       &:nth-of-type(1) {
         &:before {
@@ -914,27 +942,6 @@ input {
     display: flex;
     right: -62%;
     transition: 1s linear;
-    &:after {
-      content: "";
-      width: 80px;
-      height: 20px;
-      background: url(../../img/submit.png),
-        linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
-      background-size: 60%, 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      transform: rotate(-90deg);
-      display: flex;
-      position: absolute;
-      top: 45%;
-      left: -42%;
-      padding: 5px;
-      border-radius: 10px;
-    }
-    &:hover {
-      right: 5%;
-      transition: 1s linear;
-    }
   }
   .information {
     .information_text {
