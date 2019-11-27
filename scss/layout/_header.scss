@@ -915,8 +915,7 @@ input {
     width: 90%;
   }
   fieldset {
-    min-width: 60%;
-    width: 100%;
+    width: 60%;
     position: relative;
     z-index: 99;
     margin-top: 0;
@@ -933,16 +932,19 @@ input {
       background-size: 60%, 100%;
       background-position: center;
       background-repeat: no-repeat;
-      transform: rotate(-90deg);
+      transform: rotate(0deg);
       display: flex;
       position: absolute;
-      top: 45%;
-      left: -47%;
+      top: 100%;
+      left: -230%;
       border: none;
       outline: none;
       padding: 5px;
       border-radius: 10px;
     }
+  }
+  .fieldset_container {
+    width: 100%;
   }
   fieldset {
     &:hover {
