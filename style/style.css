@@ -1189,31 +1189,8 @@ input:nth-of-type(1) {
 }
 
 @media (max-width: 400px) {
-  .btn_mobile {
-    width: 80px;
-    height: 20px;
-    background: url(../img/submit.png), -webkit-gradient(linear, left top, right top, from(#ffbc02), to(#ffce02));
-    background: url(../img/submit.png), linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
-    background-size: 60%, 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    top: 45%;
-    left: 83%;
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 10px;
-  }
-  .btn_mobile:hover fieldset {
-    right: 5%;
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
+  .header {
+    overflow: hidden;
   }
   .header_imeage {
     position: absolute;
@@ -1234,16 +1211,43 @@ input:nth-of-type(1) {
     width: 90%;
   }
   fieldset {
-    width: 60%;
-    position: absolute;
+    min-width: 60%;
+    width: 100%;
+    position: relative;
     z-index: 99;
-    top: 0;
+    margin-top: 0;
+    top: -70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    right: -62%;
+    right: -111%;
     -webkit-transition: 1s linear;
     transition: 1s linear;
+  }
+  fieldset:before {
+    content: "";
+    width: 80px;
+    height: 20px;
+    background: url(../img/submit.png), -webkit-gradient(linear, left top, right top, from(#ffbc02), to(#ffce02));
+    background: url(../img/submit.png), linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
+    background-size: 60%, 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: -47%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  fieldset:hover {
+    right: 0;
   }
   .information .information_text {
     font-size: 0.5rem;
