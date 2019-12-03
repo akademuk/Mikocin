@@ -921,13 +921,15 @@ input {
     width: 90%;
   }
   fieldset {
-    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+    width: 100%;
     position: relative;
     z-index: 99;
     margin-top: 0;
     top: -80px;
     display: flex;
-    left: 52vw;
+    left: 51vw;
     transition: 1s linear;
     margin-bottom: 50px;
     &:after {
@@ -943,7 +945,7 @@ input {
       display: flex;
       position: absolute;
       top: 25%;
-      right: 80%;
+      right: 81%;
       border: none;
       outline: none;
       padding: 5px;
