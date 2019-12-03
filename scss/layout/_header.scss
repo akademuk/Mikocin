@@ -595,10 +595,13 @@ input {
     justify-content: flex-end;
   }
   .treatment {
-    height: 40%;
+    height: 50%;
   }
   .banner_logo_nav_form_information_nav {
     height: 50%;
+  }
+  .banner_logo_nav_form_information_tittle {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 992px) {
@@ -764,6 +767,9 @@ input {
   }
 }
 @media (max-width: 576px) {
+  .header_imeage {
+    bottom: -20px;
+  }
   .information {
     width: 100%;
     justify-content: space-between;
@@ -947,6 +953,7 @@ input {
   .fieldset_container {
     width: 100%;
     max-width: 100%;
+    background: #fff;
   }
   fieldset {
     &:hover {
