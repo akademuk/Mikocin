@@ -2171,6 +2171,15 @@ input:nth-of-type(1) {
   .fourth_section_main {
     padding-top: 50px;
   }
+  .fourth_section_block {
+    background-size: inherit;
+  }
+  .fourth_section_block_img {
+    max-width: 80%;
+    min-height: 80%;
+    padding-right: 20px;
+    padding-top: 50%;
+  }
 }
 
 @media (max-width: 992px) {
