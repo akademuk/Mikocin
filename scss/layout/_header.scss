@@ -893,7 +893,7 @@ input {
   .header_imeage {
     position: absolute;
     z-index: 1;
-    bottom: -20px;
+    bottom: 30px;
     max-width: 50%;
     opacity: 0.4;
     .header_imeage_container {
@@ -921,10 +921,10 @@ input {
     margin-top: 0;
     top: -80px;
     display: flex;
-    right: -111%;
+    left: 52vw;
     transition: 1s linear;
     margin-bottom: 50px;
-    &:before {
+    &:after {
       content: "";
       width: 80px;
       height: 20px;
@@ -933,11 +933,11 @@ input {
       background-size: 60%, 100%;
       background-position: center;
       background-repeat: no-repeat;
-      transform: rotate(0deg);
+      transform: rotate(-90deg);
       display: flex;
       position: absolute;
-      top: 75%;
-      left: -100%;
+      top: 25%;
+      right: 80%;
       border: none;
       outline: none;
       padding: 5px;
@@ -950,7 +950,7 @@ input {
   }
   fieldset {
     &:hover {
-      right: 0;
+      left: 0;
     }
   }
   .information {
